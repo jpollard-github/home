@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    margin: 2em;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1em;
+    grid-template-areas:
+        "graphic bio"
+        "footer footer";
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+#graphic {
+    grid-area: graphic;
+}
+
+#pic {
+    box-shadow: 1em 1em 0.5em gray;
+}
+
+#bio {
+    grid-area: bio;
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+#header {
+    font-size: 2em;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 1em;
+    grid-area: footer;
+}

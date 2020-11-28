@@ -1,0 +1,37 @@
+#container {
+    display: grid;
+    margin: 2em 2em 2em 2em;
+    font-family: sans-serif;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas:
+        "header"
+        "content";
+    justify-items: center;
+    height: 90vh;
+}
+
+section {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#header {
+    padding: 2em;
+    font-size: 2em;
+    background-color: gold;
+    box-shadow: 0.5em 0.5em 0.25em goldenrod;
+    grid-area: header;
+    align-self: end;
+}
+
+#content {
+    grid-area: content;
+    margin-top: 1em;
+}
+
+.small {
+    height: 1em;
+    width: 1em;
+}
+
